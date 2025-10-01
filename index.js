@@ -17,7 +17,7 @@ const server = new SMTPServer({
   onData: (stream, session, callback) => {
     console.log(`onData: ${session.id}`);
     stream.on("data", (chunk) => {
-      console.log(`Data chunk: ${chunk.length} bytes`);
+      console.log(`Data chunk: ${chunk}`);
     });
     stream.on("end", () => {
       console.log("End of data");
