@@ -26,4 +26,4 @@ const server = new SMTPServer({
   },
 });
 
-server.listen(port, () => console.log("SMTP server is running"));
+server.listen(25, () => console.log("SMTP server is running on port 25"));
